@@ -54,6 +54,19 @@
         window.clickListaSimplementeEnlazada=clickListaSimplementeEnlazada;
         window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
         window.clickListaDoblementeEnlazada=clickListaDoblementeEnlazada;
+        ////Lista Circular
+        import {inserIni,inserFinal,inserAntes_X,inserDespues_X} from './lib/lstCirSimpLig/index.js';
+        import {eliminarPrimerCir,eliminarFinalCir,eliminarAntesXCir,eliminarDespuesXCir,eliminarXCir} from './lib/lstCirSimpLig/index.js';
+        window.inserIni=inserIni;
+        window.inserFinal=inserFinal;
+        window.inserAntes_X=inserAntes_X;
+        window.inserDespues_X=inserDespues_X;
+        ///
+        window.eliminarPrimerCir=eliminarPrimerCir;
+        window.eliminarFinalCir=eliminarFinalCir;
+        window.eliminarAntesXCir=eliminarAntesXCir;
+        window.eliminarXCir=eliminarXCir;
+        window.eliminarDespuesXCir=eliminarDespuesXCir;
 
     </script>
 
@@ -93,9 +106,7 @@
 </div>
 <div id="vista1" style="display: none">
     <div class="container">
-        <br>
-        <h3 >LISTAS SIMPLEMENTE</h3>
-        <h3 >ENLAZADAS</h3>
+        <h3 >LISTAS SIMPLEMENTE ENLAZADAS</h3>
         <div style="margin: 10px">
             <canvas id="tutorial" width="700" height="150"></canvas>
         </div>
@@ -116,7 +127,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <button type="button" class="btna" id="insertar-despues" onclick="inserta_despues_X()">Despues</button>
                      </div>
-                </div><br>
+                </div>
     
                 <h4>ELIMINAR : </h4><hr>
                 <div class="botones row justify-content-around">
@@ -154,9 +165,7 @@
 </div> 
 <div id="vista2" style="display:none">
     <div class="container">
-        <br>
-        <h3 >LISTAS CIRCULARES</h3>
-        <h3 >ENLAZADAS</h3>
+        <h3 >LISTAS CIRCULARES ENLAZADAS</h3>
         <div style="margin: 10px">
             <canvas id="tutorial2" width="700" height="150"></canvas>
         </div>
@@ -166,36 +175,36 @@
                 <div class="row text-center">
                     
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button type="button" class="btna" id="agregar" onclick="insertar_al_inicio()">Inicio</button>
+                        <button type="button" class="btna" id="agregar" onclick="inserIni()">Inicio</button>
                      </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button type="button" class="btna" id="insertar-final" onclick="insertar_al_final()">Final</button>
+                        <button type="button" class="btna" id="insertar-final" onclick="inserFinal()">Final</button>
                      </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button type="button" class="btna" id="insertar-antes" onclick="insertar_antes_x()">Antes</button>
+                        <button type="button" class="btna" id="insertar-antes" onclick="inserAntes_X()">Antes</button>
                      </div >
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button type="button" class="btna" id="insertar-despues" onclick="inserta_despues_X()">Despues</button>
+                        <button type="button" class="btna" id="insertar-despues" onclick="inserDespues_X()">Despues</button>
                      </div>
-                </div><br>
+                </div>
     
                 <h4>ELIMINAR : </h4><hr>
                 <div class="botones row justify-content-around">
                     
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <button type="button" class="btna" id="insertar-despues" onclick="elimina_inicio()">Inicio</button>
+                            <button type="button" class="btna" id="insertar-despues" onclick="eliminarPrimerCir()">Inicio</button>
                          </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <button type="button" class="btna" id="eliminar-final" onclick="elimina_ultimo()">Final</button>
+                            <button type="button" class="btna" id="eliminar-final" onclick="eliminarFinalCir()">Final</button>
                          </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <button type="button" class="btna" id="eliminar-x" onclick="elimina_X()">X</button>
+                            <button type="button" class="btna" id="eliminar-x" onclick="eliminarXCir()">X</button>
                          </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <button type="button" class="btna" id="eliminar-antes" onclick="elimina_antes_X()">Antes</button>
+                            <button type="button" class="btna" id="eliminar-antes" onclick="eliminarAntesXCir()">Antes</button>
                          </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                            <button type="button" class="btna" id="eliminar-despues" onclick="elimina_despues_X()">Despues</button>
+                            <button type="button" class="btna" id="eliminar-despues" onclick="eliminarDespuesXCir()">Despues</button>
                          </div>
                     
                 </div>
@@ -213,9 +222,7 @@
 </div>
 <div id="vista3" style="display:none">
     <div class="container">
-        <br>
-        <h3 >LISTAS DOBLEMENTE</h3>
-        <h3 >ENLAZADAS</h3>
+        <h3 >LISTAS DOBLEMENTE ENLAZADAS</h3>
         <div style="margin: 10px">
             <canvas id="tutorial3" width="700" height="150"></canvas>
         </div>
@@ -236,8 +243,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <button type="button" class="btna" id="insertar-despues" onclick="inserta_despues_X()">Despues</button>
                      </div>
-                </div><br>
-    
+                </div>
                 <h4>ELIMINAR : </h4><hr>
                 <div class="botones row justify-content-around">
                     
