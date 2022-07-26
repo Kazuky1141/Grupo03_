@@ -1,0 +1,53 @@
+
+body {
+    text-align: center;
+    justify-content: center;
+    background:url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#tutorial,#tutorial2,#tutorial3{
+    border: 2px solid rgb(247, 0, 255); 
+    background-color: rgba(201, 0, 241, 0.75);
+    background:linear-gradient(-45deg, #ee7752,#e73c7e,#23A);
+    transition: .10s ease;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+#principal button{
+    width:200px;
+    margin:5px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family:Breathing;
+    src: url(Breathing.ttf);
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.botonesMenu{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: salmon;
+}
+body::-webkit-scrollbar-thumb{
+    background: #e73c7e;
+}
