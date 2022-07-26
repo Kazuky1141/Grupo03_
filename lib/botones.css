@@ -50,3 +50,23 @@
     text-shadow: 0 0 5px rgb(255, 251, 0),0 0 10px rgb(238, 255, 0),0 0 15px rgb(225, 255, 0);
 }
 
+.music{
+    width: 10px;
+    height: 10px;
+}
+
+.bt{
+    border: none;
+    font-family: 'Quicksand', cursive;
+    font-weight: bold;
+    color: #F6FF00;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    text-shadow: 0 0 15px rgb(255, 251, 0),0 0 20px rgb(238, 255, 0),0 0 30px rgb(238, 255, 0);
+}
+.bt:hover{
+    box-shadow: 1px 5px 20px rgba(255, 0, 0, 0.8);
+    color:rgb(223, 93, 255);
+    text-shadow: 0 0 5px rgb(204, 0, 255),0 0 15px rgb(204, 0, 255),0 0 15px rgb(204, 0, 255);
+}

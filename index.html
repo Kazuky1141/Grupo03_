@@ -20,9 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stick+No+Bills:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lib/botones.css">
-    
     <link rel="stylesheet" href="lib/fonts.css">
-    
     <link rel="stylesheet" href="lib/style.css">
     <script type="module">
 
@@ -60,11 +58,10 @@
     </script>
 
 </head>
-
 <body >
 <div id="principal">
     <div class="container">
-        <div class="row text-center" style="margin-bottom: 50px;">
+        <div class="row text-center" style="margin-bottom: 30px;">
             <div class="col">
                 <h1>ALGORITMOS </h1>
                 <h1>DE </h1>
@@ -84,9 +81,14 @@
                 </div>
             </div>
         </div>
-        
-    </div>
-
+        <audio id ="player" src="lib/Better Days.mp3" loop></audio>
+                <div class="container">
+                    <button class="bt" id="play" onclick="document.getElementById('player').play()">PLAY</button>
+                    <button class="bt" id="stop" onclick="document.getElementById('player').pause()">PAUSA</button>
+                </div>
+            
+    </div>    
+    
    
 </div>
 <div id="vista1" style="display: none">
