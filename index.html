@@ -49,11 +49,14 @@
 
         import {clickListaSimplementeEnlazada,
             clickListaCirsularSimplementeEnlazada,
-            clickListaDoblementeEnlazada} 
+            clickListaDoblementeEnlazada,
+            clickIntegrantes
+        } 
         from './lib/index.js';
         window.clickListaSimplementeEnlazada=clickListaSimplementeEnlazada;
         window.clickListaCirsularSimplementeEnlazada=clickListaCirsularSimplementeEnlazada;
         window.clickListaDoblementeEnlazada=clickListaDoblementeEnlazada;
+        window.clickIntegrantes=clickIntegrantes;
         ////Lista Circular
         import {inserIni,inserFinal,inserAntes_X,inserDespues_X} from './lib/lstCirSimpLig/index.js';
         import {eliminarPrimerCir,eliminarFinalCir,eliminarAntesXCir,eliminarDespuesXCir,eliminarXCir} from './lib/lstCirSimpLig/index.js';
@@ -74,36 +77,24 @@
 <body >
 <div id="principal">
     <div class="container">
-        <div class="row text-center" style="margin-bottom: 30px;">
+        <div class="row text-center">
             <div class="col">
-                <h1>ALGORITMOS </h1>
+                <h1 class="main_title">ALGORITMOS </h1>
                 <h1>DE </h1>
                 <h2>Osvaldo Cairo</h2>
             </div>
         </div>
         <div class="opciones">
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
+            <div class="row justify-content-center">
                         <button class="botone" onclick="clickListaSimplementeEnlazada()">LISTA SIMPLE</button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
                         <button class="botone" onclick="clickListaCirsularSimplementeEnlazada()">LISTA CIRCULAR </button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 ">
                         <button class="botone" onclick="clickListaDoblementeEnlazada()">LISTA DOBLE</button>
-                </div>
             </div>
-        </div>
-        <audio id ="player" src="lib/Better Days.mp3" loop></audio>
-                <div class="container">
-                    <button class="bt" id="play" onclick="document.getElementById('player').play()">PLAY</button>
-                    <button class="bt" id="stop" onclick="document.getElementById('player').pause()">PAUSA</button>
-                </div>
-            
+            <br><button class="botone" onclick="clickIntegrantes()">INTEGRANTES</button>
+        </div>      
     </div>    
-    
-   
 </div>
+
 <div id="vista1" style="display: none">
     <div class="container">
         <h3 >LISTAS SIMPLEMENTE ENLAZADAS</h3>
@@ -275,6 +266,31 @@
         </div>
     </div>
     
+</div>
+<div id="vista4" style="display:none">
+    <div class="container1">
+        <br>
+        <h3>PROYECTO:</h3>
+        <h3>CREACION DE DISTINTOS TIPOS DE LISTAS</h3>
+        <h4>Profesor: Jorge David Cotrado Mamani</h4>
+        <h5>INTEGRANTES:</h5><br>
+            <div class="container">
+                <ul>
+                    <a id="name1">Alexis David Coaquira Quispe</a><hr>
+                    <a id="name2">Eduardo Yack Patricio Callo</a><hr>
+                    <a id="name3">Franz Patricio Sánchez Illatarqui</a>
+                </ul>
+            </div>
+        <br>    
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <button class ="botone" onclick="window.history.back()">MENU</button>
+                    </div>
+                </div>
+            </div>  
+        
+    </div> 
 </div>
    
 </body>

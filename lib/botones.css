@@ -50,11 +50,6 @@
     text-shadow: 0 0 5px rgb(255, 251, 0),0 0 10px rgb(238, 255, 0),0 0 15px rgb(225, 255, 0);
 }
 
-.music{
-    width: 10px;
-    height: 10px;
-}
-
 .bt{
     border: none;
     font-family: 'Quicksand', cursive;

@@ -1,5 +1,5 @@
 
-body {
+body{
     text-align: center;
     justify-content: center;
     background:url(fondo.jpg);
@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .titulo{
@@ -50,3 +51,5 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: #e73c7e;
 }
+
+
