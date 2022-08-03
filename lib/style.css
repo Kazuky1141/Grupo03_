@@ -4,6 +4,7 @@ body{
     justify-content: center;
     background:url(fondo.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     position: relative;
 }
